@@ -64,7 +64,7 @@ techdf4 <-
 #assertthat::are_equal(nrow(techdf4), nrow(techdf))
 
 #clean df: drop the others
-finaltechdf = techdf4 %>% select(
+finaltechdf = techdf4 %>% dplyr::select(
                       -c(
                         Inflight.wifi.service,
                         Inflight.entertainment,
