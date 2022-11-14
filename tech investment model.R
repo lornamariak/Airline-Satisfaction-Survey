@@ -1,7 +1,7 @@
-#Modeling the tech investment question: Technology investment to improve wifi and entertainment service
+#Modeling the tech investment question: Technology investment to improve wifi and entertainment service(updates wifi and enetr)
 library(dplyr)
 techdf <-
-  airline %>% select(
+  airline %>% dplyr::select(
     c(
       Satisfaction,
       Age,
@@ -105,4 +105,5 @@ summary(model1)
 p_values <- pnorm(-abs(summary(model1)$coef[,"t value"]))*2
 ptable <- cbind(summary(model1)$coef, p_values)
 ptable
+
   
