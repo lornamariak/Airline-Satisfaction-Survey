@@ -1,0 +1,5 @@
+load("/Users/lorna/R projects/702 Modeling Projects/Assignment 4/source data/airline_survey")
+write.csv(airline,"/Users/lorna/R projects/702 Modeling Projects/Assignment 4/source data/airline.csv")
+library(readr)
+data <- read_csv("source data/airline.csv")
+View(data)
